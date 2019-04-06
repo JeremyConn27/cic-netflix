@@ -157,7 +157,7 @@ footer{width: 100%; height: auto; min-height: 30vh;}
   #featured-selection .featured-actions-container{width: 100%; max-width: 100%; align-items: center; margin: 40px 0 0 0;}
   #featured-selection .featured-actions-container p.featured-media-description{display: none;}
   .list-row-container .list-row{flex-wrap: wrap;}
-  .list-row-container .list-row .list-item{min-width: 120px; margin-bottom: 5px;}
+  .list-row-container .list-row .list-item{min-width: 125px; margin-bottom: 5px;}
 }
 
 @media screen and (max-width: 876px){
@@ -171,6 +171,7 @@ footer{width: 100%; height: auto; min-height: 30vh;}
   header{padding: 0 0 0 20px;}
   #new-releases-container{margin: 0 0 45px 20px;}
   .list-row-container{width: calc(100% - 26.5px); margin: 0 0 40px 20px;}
-  .list-row-container .list-row .list-item{width: calc((100% - 50px) / 6); flex-grow: 1;}
+  .list-row-container .list-row .list-item{width: calc((100% - 50px) / 6); min-width: 150px; flex-grow: 1;}
   .list-row-container .list-row .list-item:hover{transform: none; box-shadow: none;}
+  #netflix-originals-container .list-row .list-item:hover{transform: none;}
 }
