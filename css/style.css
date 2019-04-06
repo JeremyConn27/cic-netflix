@@ -118,7 +118,7 @@ a.profiles-button:hover{color: white; border-color: white;}
 #featured-selection .featured-action-buttons button:hover{transform: scale(1.05); transform-origin: center; background: #fff; color: #000; box-shadow: 0 15px 25px 0 rgba(10, 10, 10, .20); cursor: pointer;}
 #featured-selection .featured-action-buttons button i{font-size: 28px; margin-right: 8px;}
 #featured-selection .featured-actions-container p.featured-media-description{font-family: 'pier_sansregular'; font-size: 21px; line-height: 1.4; text-shadow: 5px 5px 12px #000;}
-#featured-selection video{position: absolute; top: 0; left: 0; width: 100%; height: auto;}
+#featured-selection video{position: absolute; top: 0; left: 0; width: 100%; height: auto; z-index: 1;}
 .homepage main{width: 100%; max-width: 100%; padding-bottom: 100px;}
 
 .list-row-container{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; margin: 0 0 45px 60px; width: calc(100% - 60px); height: auto; }
