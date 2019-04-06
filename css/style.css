@@ -66,7 +66,7 @@ body{background: #141414; font-family: 'pier_sansregular'; color: #fff; overflow
 main{width: 100%; max-width: 1200px; height: auto; margin: 0 auto; padding: 0; }
 
 /* Header Styles */
-header{display: flex; flex-direction: row; justify-content: flex-start; align-items: center; flex: 0 0 100%; width: 100%; height: 65px; padding: 0 0 0 60px; background: transparent; position: fixed; top: 0; left: 0; z-index: 1000;}
+header{display: flex; flex-direction: row; justify-content: flex-start; align-items: center; flex: 0 0 100%; width: 100%; height: 65px; padding: 0 0 0 60px; background: transparent; position: fixed; top: 0; left: 0; z-index: 100000;}
 .homepage header{background: linear-gradient(to bottom, rgba(20, 20, 20, .75), transparent);}
 header a.header-logo .header-logo-image{display: block; width: 92px; height: 55px; background: url('../images/netflix-logo.svg') no-repeat center center; background-size: contain; will-change: transform; transition: .2s ease-in-out;}
 .header-logo-image:hover{transform: scale(1.2); transform-origin: center;}
@@ -77,7 +77,7 @@ header ul.nav-links li a:hover{color: #b3b3b3; cursor: pointer;}
 header ul.nav-links li a.active-link{font-family: 'pier_sansbold';}
 header .nav-actions-container{display: flex; flex-direction: row; justify-content: flex-end; align-items: center; margin-left: auto; padding-right: 66.5px;}
 header .nav-actions-container .search-box{margin: 0 12.5px;}
-header .nav-actions-container .notifications-container{margin: 0 15px;}
+header .nav-actions-container .notifications-container{margin: 0 14px;}
 header .nav-actions-container .notifications-container .notifications-icon{position: relative; font-size: 28px;}
 header .nav-actions-container .notifications-container .notifications-icon:after{content: '3'; display: flex; flex-direction: row; justify-content: center; align-items: center; width: 18px; height: 18px; border-radius: 100%; background: #B9090B; color: #fff; font-family: 'pier_sansbold'; font-size: 10px; position: absolute; top: -2px; right: -4px;}
 header .nav-actions-container .profiles-container{margin: 0 0 0 10px;}
@@ -103,15 +103,22 @@ a.profiles-button{display: flex; flex-direction: row; justify-content: center; a
 a.profiles-button:hover{color: white; border-color: white;}
 
 /* Homepage Styles */
-#featured-selection{display: flex; width: 100%; height: auto; padding-bottom: 52.25%; background: url('../images/stranger-things-featured.jpg') no-repeat; background-size: cover; background-position: center center; position: relative;}
+#featured-selection{display: flex; width: 100%; height: auto; padding-bottom: 52.25%; background: url('../images/stranger-things-featured.jpg') no-repeat; background-size: cover; background-position: center center; position: relative; overflow: hidden;}
 #featured-selection:after{content: ''; width: 100%; height: 125px; background: linear-gradient(to top, #141414, transparent); position: absolute; bottom: 0; left: 0; z-index: 99;}
 #featured-selection .featured-selection-content{display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 100;}
 #featured-selection .featured-actions-container{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; max-width: 40%; margin: 40px 0 0 60px;}
 #featured-selection .featured-action-buttons{display: flex; flex-direction: row; justify-content: flex-start; align-items: center; margin-bottom: 10px;}
 #featured-selection .featured-action-buttons button{display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 10px 35px; background: rgba(0, 0, 0, .35); box-shadow: 0; color: #e6e6e6; font-family: 'pier_sansbold'; font-size: 16px; margin-right: 10px; border-radius: 3px; outline: none; border: none; white-space: nowrap; will-change: transform; transition: .2s ease-in-out;}
+#featured-selection .featured-action-buttons button#play-pause-button span{display: flex; justify-content: center; align-items: center; }
+#featured-selection .featured-action-buttons button#play-pause-button .play-controls{display: none;}
+#featured-selection .featured-action-buttons button#play-pause-button.pause-video .pause-controls{display: flex;}
+#featured-selection .featured-action-buttons button#play-pause-button.pause-video .play-controls{display: none;}
+#featured-selection .featured-action-buttons button#play-pause-button.play-video .pause-controls{display: none;}
+#featured-selection .featured-action-buttons button#play-pause-button.play-video .play-controls{display: flex;}
 #featured-selection .featured-action-buttons button:hover{transform: scale(1.05); transform-origin: center; background: #fff; color: #000; box-shadow: 0 15px 25px 0 rgba(10, 10, 10, .20); cursor: pointer;}
 #featured-selection .featured-action-buttons button i{font-size: 28px; margin-right: 8px;}
 #featured-selection .featured-actions-container p.featured-media-description{font-family: 'pier_sansregular'; font-size: 21px; line-height: 1.4; text-shadow: 5px 5px 12px #000;}
+#featured-selection video{position: absolute; top: 0; left: 0; width: 100%; height: auto;}
 .homepage main{width: 100%; max-width: 100%; padding-bottom: 100px;}
 
 .list-row-container{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; margin: 0 0 45px 60px; width: calc(100% - 60px); height: auto; }
@@ -120,6 +127,8 @@ a.profiles-button:hover{color: white; border-color: white;}
 .list-row-container .list-row .list-item{width: calc((100% - 90px) / 6); margin-right: 5px; box-shadow: none; will-change: transform; transition: .35s ease-in-out; position: relative; z-index: 101;}
 .list-row-container .list-row .list-item .list-item-media-bg-container{width: 100%; padding: 28.125% 0; height: 0; overflow: hidden; white-space: nowrap; position: relative;}
 .list-row-container .list-row .list-item .list-item-media-bg{width: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('../images/ozark.jpg') no-repeat; background-position: center; background-size: contain; }
+.list-row-container .list-row .list-item:first-of-type:hover{transform-origin: center left;}
+.list-row-container .list-row .list-item:last-of-type:hover{transform-origin: center right;}
 .list-row-container .list-row .list-item:nth-of-type(2n) .list-item-media-bg{background: url('../images/the-office.webp') no-repeat;  background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:nth-of-type(3n) .list-item-media-bg{background: url('../images/stranger-things.jpg') no-repeat;  background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:nth-of-type(4n) .list-item-media-bg{background: url('../images/joe-rogan.jpg') no-repeat;  background-position: center; background-size: contain; }
@@ -138,3 +147,20 @@ a.profiles-button:hover{color: white; border-color: white;}
 #netflix-originals-container .list-row .list-item:nth-of-type(3n) .list-item-media-bg{background: url('../images/disappearance.webp') no-repeat; background-position: center; background-size: contain;}
 #netflix-originals-container .list-row .list-item:nth-of-type(4n) .list-item-media-bg{background: url('../images/netlfix-original.webp') no-repeat; background-position: center; background-size: contain;}
 footer{width: 100%; height: auto; min-height: 30vh;}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  header .nav-actions-container ul.secondary-links{display: none;}
+  #featured-selection .featured-actions-container{width: 100%; max-width: 100%; align-items: center; margin: 40px 0 0 0;}
+  #featured-selection .featured-actions-container p.featured-media-description{display: none;}
+}
+
+@media screen and (max-width: 876px){
+  .homepage header{background: #000;}
+  header a.header-logo .header-logo-image{width: 36px; height: 36px; background: url('../images/netflix-logo-small.svg') no-repeat center center; background-size: contain;}
+  #featured-selection{margin-top: 65px;}
+  #new-releases-container{margin: 0 0 45px 60px;}
+}

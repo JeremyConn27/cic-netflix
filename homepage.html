@@ -44,9 +44,15 @@
         <div class="featured-selection-content">
             <div class="featured-actions-container">
                 <div class="featured-action-buttons">
-                    <button class="button">
-                        <i class="material-icons">play_arrow</i> 
-                        Play
+                    <button id="play-pause-button" class="button" onclick="playPauseVideo()">
+                        <span class="play-controls">
+                            <i class="material-icons">play_arrow</i> 
+                            Play
+                        </span>
+                        <span class="pause-controls">
+                            <i class="material-icons"> pause </i>
+                            Pause
+                        </span>
                     </button>
                     <button class="button">
                         <i class="material-icons">add</i>
@@ -59,6 +65,9 @@
                 </p>
             </div>
         </div>
+        <video id="featured-video" width="100%" height="100%" autoplay loop muted>
+           <source src="../videos/stock-video-space.mp4" type="video/mp4">
+        </video>
     </section>
     <main>
         <section id="new-releases-container" class="list-row-container">
@@ -241,4 +250,5 @@
 
     </footer>
 </body>
+<script src="../js/main.js"></script>
 </html>
