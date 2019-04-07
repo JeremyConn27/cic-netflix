@@ -70,7 +70,9 @@ header{display: flex; flex-direction: row; justify-content: flex-start; align-it
 .homepage header{background: linear-gradient(to bottom, rgba(20, 20, 20, .75), transparent);}
 header a.header-logo .header-logo-image{display: block; width: 92px; height: 55px; background: url('../images/netflix-logo.svg') no-repeat center center; background-size: contain; will-change: transform; transition: .2s ease-in-out;}
 .header-logo-image:hover{transform: scale(1.2); transform-origin: center;}
-header i.nav-menu-icon{display: none; font-size: 32px; margin-left: 20px; color: #fff;}
+header i.nav-menu-icon{display: none; font-size: 32px; margin-left: 20px; color: #fff; will-change: transform; transition: .2s ease-in-out;}
+header i.nav-menu-icon:hover{color: #e5e5e5; cursor: pointer;}
+header i.nav-menu-icon.open-menu{transform: rotate(90deg);}
 header ul.nav-links{display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: auto; height: 100%; margin-left: 35px;}
 header ul.nav-links li a{font-family: 'pier_sanslight'; color: #E5E5E5; font-size: 14px; margin: 0 10px; letter-spacing: .2px; transition: .2s ease-in-out;}
 header u.nav-links li a:visited{color: #E5E5E5;}
@@ -168,7 +170,8 @@ footer{width: 100%; height: auto; min-height: 30vh;}
   header{padding: 0 0 0 20px;}
   .homepage header{background: #000;}
   header i.nav-menu-icon{display: block;}
-  header ul.nav-links{display: flex; flex-direction: column; justify-content: flex-end; align-items: center; width: 100%; height: auto; margin: 0; padding: 40px 0; background: #000; position: absolute; top: 0; left: 0; transform: translateY(-100%); will-change: transform; z-index: 999;}
+  header ul.nav-links{display: flex; flex-direction: column; justify-content: flex-end; align-items: center; width: 100%; height: auto; margin: 0; padding: 40px 0; background: #000; position: absolute; top: 0; left: 0; transform: translateY(-100%); will-change: transform; transition: .25s ease-in-out; z-index: -1;}
+  header ul.nav-links.open-menu{transform: translateY(calc(0% + 65px)); }
   header ul.nav-links li a{display: block; font-size: 21px; margin: 0 0 20px 0;}
   header .nav-actions-container{padding-right: 26.5px;}
   header a.header-logo .header-logo-image{width: 36px; height: 36px; background: url('../images/netflix-logo-small.svg') no-repeat center center; background-size: contain;}
