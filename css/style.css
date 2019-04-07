@@ -89,9 +89,9 @@ header .nav-actions-container ul.secondary-links{display: flex; flex-direction: 
 header .nav-actions-container ul.secondary-links li a{font-family: 'pier_sanslight'; color: #E5E5E5; font-size: 14px; margin: 0 10px; letter-spacing: .2px; transition: .2s ease-in-out;}
 
 /* Profile Selection Screen Styles */
-.profile-mgmt-container{display: flex; flex-direction: column; justify-content: center; align-items: center; flex-basis: 100%; width: 100%; height: calc(100vh - 65px);}
-h1{font-family: 'pier_sansregular'; font-size: 52px; text-align: center;padding-bottom: 20px;}
-.profiles-container{display: flex; flex-direction: row; justify-content: space-around; align-items: center; flex-wrap: wrap; flex-basis: 100%; height: auto; max-height: 225px;}
+.profile-mgmt-container{display: flex; flex-direction: column; justify-content: center; align-items: center; flex-basis: 100%; width: 100%; min-height: calc(100vh - 100px); margin-top: 100px;}
+h1.profile-header{font-family: 'pier_sansregular'; font-size: 52px; text-align: center;padding-bottom: 20px;}
+.profiles-container{display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; height: auto;}
 .individual-profile{display: flex; flex-direction: column; justify-content: flex-start; align-items: center; flex: 1; margin: 0 15px; text-decoration: none; transition: .2s ease-in-out;}
 .individual-profile .profile-image{width: 150px; height: 150px; max-width: 150px; max-height: 150px; background: url('../images/dog.png') no-repeat center center; background-size: contain; border: 5px solid #1F1F1F; transition: .2s ease-in-out;}
 .individual-profile:hover{cursor: pointer;}
@@ -151,7 +151,7 @@ a.profiles-button:hover{color: white; border-color: white;}
 #netflix-originals-container .list-row .list-item:nth-of-type(4n) .list-item-media-bg{background: url('../images/triple-frontier.webp') no-repeat; background-position: center; background-size: contain;}
 #netflix-originals-container .list-row .list-item:nth-of-type(5n) .list-item-media-bg{background: url('../images/umbrella-academy.webp') no-repeat; background-position: center; background-size: contain;}
 #netflix-originals-container .list-row .list-item:nth-of-type(6n) .list-item-media-bg{background: url('../images/last-kingdom.webp') no-repeat; background-position: center; background-size: contain;}
-footer{width: 100%; height: auto; min-height: 30vh;}
+footer{width: 100%; height: auto; min-height: 20vh;}
 
 
 
@@ -159,6 +159,8 @@ footer{width: 100%; height: auto; min-height: 30vh;}
 
 @media screen and (max-width: 1000px) {
   header .nav-actions-container ul.secondary-links{display: none;}
+  .individual-profile .profile-image{width: 100px; height: 100px;}
+  .individual-profile{margin: 20px 10px;}
   #featured-selection .featured-actions-container{width: 100%; max-width: 100%; align-items: center; margin: 40px 0 0 0;}
   #featured-selection .featured-actions-container p.featured-media-description{display: none;}
   .list-row-container .list-row{flex-wrap: wrap;}
@@ -169,6 +171,7 @@ footer{width: 100%; height: auto; min-height: 30vh;}
   main{padding: 0 20px;}
   header{padding: 0 0 0 20px;}
   .homepage header{background: #000;}
+  h1.profile-header{font-size: 36px;}
   header i.nav-menu-icon{display: block;}
   header ul.nav-links{display: flex; flex-direction: column; justify-content: flex-end; align-items: center; width: 100%; height: auto; margin: 0; padding: 40px 0; background: #000; position: absolute; top: 0; left: 0; transform: translateY(-100%); will-change: transform; transition: .25s ease-in-out; z-index: -1;}
   header ul.nav-links.open-menu{transform: translateY(calc(0% + 65px)); }
