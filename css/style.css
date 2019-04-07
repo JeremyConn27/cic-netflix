@@ -129,10 +129,10 @@ a.profiles-button:hover{color: white; border-color: white;}
 .list-row-container .list-row .list-item .list-item-media-bg{width: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('../images/ozark.jpg') no-repeat; background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:first-of-type:hover{transform-origin: center left;}
 .list-row-container .list-row .list-item:last-of-type:hover{transform-origin: center right;}
-.list-row-container .list-row .list-item:nth-of-type(2n) .list-item-media-bg{background: url('../images/the-office.webp') no-repeat;  background-position: center; background-size: contain; }
+.list-row-container .list-row .list-item:nth-of-type(2n) .list-item-media-bg{background: url('../images/the-order.jpg') no-repeat;  background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:nth-of-type(3n) .list-item-media-bg{background: url('../images/stranger-things.jpg') no-repeat;  background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:nth-of-type(4n) .list-item-media-bg{background: url('../images/joe-rogan.jpg') no-repeat;  background-position: center; background-size: contain; }
-.list-row-container .list-row .list-item:nth-of-type(5n) .list-item-media-bg{background: url('../images/avengers.webp') no-repeat;  background-position: center; background-size: contain; }
+.list-row-container .list-row .list-item:nth-of-type(5n) .list-item-media-bg{background: url('../images/chefs-table.jpg') no-repeat;  background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:nth-of-type(6n) .list-item-media-bg{background: url('../images/highway-men.jpg') no-repeat;  background-position: center; background-size: contain; }
 .list-row-container .list-row .list-item:hover{transform: scale(1.75); transform-origin: center; box-shadow: 0 15px 35px 0 rgba(10, 10, 10, .85); cursor: pointer; z-index: 102;}
 
@@ -143,9 +143,11 @@ a.profiles-button:hover{color: white; border-color: white;}
 #netflix-originals-container .list-row .list-item .list-item-media-bg-container{padding: 100% 0;}
 #netflix-originals-container .list-row .list-item .list-item-media-bg{background: url('../images/master-of-none.webp') no-repeat; background-position: center; background-size: contain;}
 #netflix-originals-container .list-row .list-item:hover{transform: scale(1.2);}
-#netflix-originals-container .list-row .list-item:nth-of-type(2n) .list-item-media-bg{background: url('../images/arrested-dev.webp') no-repeat; background-position: center; background-size: contain;}
-#netflix-originals-container .list-row .list-item:nth-of-type(3n) .list-item-media-bg{background: url('../images/disappearance.webp') no-repeat; background-position: center; background-size: contain;}
-#netflix-originals-container .list-row .list-item:nth-of-type(4n) .list-item-media-bg{background: url('../images/netlfix-original.webp') no-repeat; background-position: center; background-size: contain;}
+#netflix-originals-container .list-row .list-item:nth-of-type(2n) .list-item-media-bg{background: url('../images/fyre-festival.webp') no-repeat; background-position: center; background-size: contain;}
+#netflix-originals-container .list-row .list-item:nth-of-type(3n) .list-item-media-bg{background: url('../images/kevin-hart.webp') no-repeat; background-position: center; background-size: contain;}
+#netflix-originals-container .list-row .list-item:nth-of-type(4n) .list-item-media-bg{background: url('../images/triple-frontier.webp') no-repeat; background-position: center; background-size: contain;}
+#netflix-originals-container .list-row .list-item:nth-of-type(5n) .list-item-media-bg{background: url('../images/umbrella-academy.webp') no-repeat; background-position: center; background-size: contain;}
+#netflix-originals-container .list-row .list-item:nth-of-type(6n) .list-item-media-bg{background: url('../images/last-kingdom.webp') no-repeat; background-position: center; background-size: contain;}
 footer{width: 100%; height: auto; min-height: 30vh;}
 
 
